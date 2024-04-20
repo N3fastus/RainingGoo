@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- Class, not class! -->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef/baseWeatherCommonalities</xpath>
+    <value>
+        <RainingGoo>64</RainingGoo>
+    </value>
+</Operation>
+</Patch>

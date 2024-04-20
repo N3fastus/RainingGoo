@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WeatherDef>
+    <defName>RainingGoo</defName>
+    <label>raining goo</label>
+    <description>It's raining goo; what the fuck?!</description>
+
+    <!-- ThoughtDefs/RainingBlood.xml -->
+    <!-- <exposedThought>SoakingWet</exposedThought> -->
+    <!-- <exposedThought>BloodCovered</exposedThought> -->
+
+    <!-- Copied from rain -->
+    <temperatureRange>0~100</temperatureRange>
+    <windSpeedFactor>1.5</windSpeedFactor>
+    <accuracyMultiplier>0.7</accuracyMultiplier>
+    <favorability>Neutral</favorability>
+    <perceivePriority>1</perceivePriority>
+
+    <weatherThought>GooCovered</weatherThought>
+
+    <modExtensions>
+        <!-- Class, not class! -->
+        <li Class="RainingGoo.WeatherDefExtension">
+            <weatherThoughtNudist>GooCoveredNudist</weatherThoughtNudist>
+        </li>
+    </modExtensions>
+
+    <rainRate>1</rainRate>
+    <moveSpeedMultiplier>0.7</moveSpeedMultiplier>
+    <ambientSounds>
+        <li>Ambient_Rain</li>
+    </ambientSounds>
+    <overlayClasses>
+        <li>WeatherOverlay_Rain</li>
+    </overlayClasses>
+    <commonalityRainfallFactor>
+        <points>
+            <li>(0, 0)</li>
+            <li>(1300, 1)</li>
+            <li>(4000, 3.0)</li>
+        </points>
+    </commonalityRainfallFactor>
+
+    <!-- Colours modified to be reddish; just a crude effect. -->
+    <skyColorsDay>
+        <sky>(0.2,0.8,0.8)</sky>
+        <shadow>(0.2,0.92,0.92)</shadow>
+        <overlay>(0.1,0.7,0.7)</overlay>
+        <saturation>0.9</saturation>
+    </skyColorsDay>
+
+    <skyColorsDusk>
+        <sky>(0,1,1)</sky>
+        <shadow>(0.2,0.92,0.92)</shadow>
+        <overlay>(0.1,0.6,0.6)</overlay>
+        <saturation>0.9</saturation>
+    </skyColorsDusk>
+
+    <skyColorsNightEdge>
+        <sky>(0.1,0.35,0.35)</sky>
+        <shadow>(0.2,0.92,0.92)</shadow>
+        <overlay>(0.1,0.5,0.5)</overlay>
+        <saturation>0.9</saturation>
+    </skyColorsNightEdge>
+
+    <skyColorsNightMid>
+        <sky>(0.05,0.20,0.25)</sky>
+        <shadow>(0.2,0.92,0.92)</shadow>
+        <overlay>(0.1,0.5,0.5)</overlay>
+        <saturation>0.9</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+</Defs>

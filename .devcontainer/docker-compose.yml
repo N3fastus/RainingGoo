@@ -6,7 +6,8 @@ services:
 
     volumes:
       - ../..:/workspaces:cached
-      - ../../../RimWorldLinux_Data:/workspaces/RainingGoo/RimWorldLinux_Data:cached
+      # Adjust this path to your coressponding platform
+      - ../../../RimWorldLinux_Data:/workspaces/RainingGoo/RimWorld_Data:cached
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity

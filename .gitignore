@@ -28,8 +28,7 @@ obj/
 TestResults/
 .mono/
 Assemblies/net8.0
-RimWorldLinux_Data/
-RimWorldWindows_Data/
+RimWorld_Data/
 ###################
 # Web publish log #
 ###################

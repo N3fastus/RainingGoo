@@ -4,7 +4,7 @@
 <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef/baseWeatherCommonalities</xpath>
     <value>
-        <RainingGoo>64</RainingGoo>
+        <RainingGoo>1</RainingGoo>
     </value>
 </Operation>
 </Patch>
